@@ -3,8 +3,16 @@
  *  @class      SGP4OrbitTrajectory
  *  @author     Irene Guitart Rosselló (IGR), ireneguitart87@hotmail.com
  *  @date       2022-may-22
- *  @copyright  This file is part of a project developed at Nano-Satellite and Payload Laboratory
- *              (NanoSat Lab), Universitat Politècnica de Catalunya - UPC BarcelonaTech.
+ *  @copyright  This code has been developed by Fundació Privada Internet i Innovació Digital a 
+ *              Catalunya (i2CAT). i2CAT is a non-profit research and innovation centre that 
+ *              promotes mission-driven knowledge to solve business challenges, co-create solutions
+ *              with a transformative impact, empower citizens through open and participative 
+ *              digital social innovation with territorial capillarity, and promote pioneering and 
+ *              strategic initiatives. i2CAT *aims to transfer* research project results to private 
+ *              companies in order to create social and economic impact via the out-licensing of 
+ *              intellectual property and the creation of spin-offs.
+ *              Find more information of i2CAT projects and IP rights at:
+ *              https://i2cat.net/tech-transfer/
  **************************************************************************************************/
 
 #ifndef __SGP4_ORBIT_TRAJECTORY_HPP__
