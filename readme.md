@@ -1,13 +1,12 @@
 <img src="https://wikifab.org/images/b/b6/Group-i2CAT_logo-color-alta.jpg" width=25% height=25%>
 
 [![Maintenance](https://img.shields.io/badge/Status-Maintained-green.svg)]()
-[![Linux](https://svgshare.com/i/Zhy.svg)](https://www.linux.org/pages/download/)
 [![made-with-cpp](https://img.shields.io/badge/Made%20with-C%2B%2B-blue)](https://isocpp.org/)
 [![GPLv2 license](https://img.shields.io/badge/License-GPLv2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
 
 
 # Libraries to Simulate Satellite Networks
-This repositroy contains libraries that simulate satellite networks. Such libraries are compatible with the Distributed Satellite System Simulator (DSS-SIM). The description of the DSS-SIM can be found in the following paper: [Towards an Integral Model-Based Simulator for Autonomous Earth Observation Satellite Networks](https://ieeexplore.ieee.org/abstract/document/8517811). The current version of this repository allows to simulate the following aspects of the satellite networks:
+This repository contains libraries that simulate satellite networks. Such libraries are compatible with the Distributed Satellite System Simulator (DSS-SIM). The description of the DSS-SIM can be found in the following paper: [Towards an Integral Model-Based Simulator for Autonomous Earth Observation Satellite Networks](https://ieeexplore.ieee.org/abstract/document/8517811). The current version of this repository allows to simulate the following aspects of the satellite networks:
 * **Propagation Models**: Allows the simulation of attenuation in RF communications due to the clouds.
 * **Medium Access Protocols**: Allows the simulation of the CSMA-CA including the and adapted Net Device Module.
 * **Spacecraft Subsystems**: Addition of a Solar cells model.
