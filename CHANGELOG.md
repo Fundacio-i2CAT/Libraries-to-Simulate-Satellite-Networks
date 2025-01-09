@@ -9,8 +9,8 @@
     - [SGP4OrbitTrajectory.cpp](orbit_trajectory/SGP4OrbitTrajectory.cpp)
     - [SGP4OrbitTrajectory.hpp](orbit_trajectory/SGP4OrbitTrajectory.hpp)
 - [propagation_models](propagation_models)
-    - [Clouds.cpp](propagation_models/Clouds.cpp)
-    - [Clouds.hpp](propagation_models/Clouds.hpp)
+    - [CloudsPropagationLossModel.cpp](propagation_models/CloudsPropagationLossModel.cpp)
+    - [CloudsPropagationLossModel.hpp](propagation_models/CloudsPropagationLossModel.hpp)
 - [spacecraft_subsystems](spacecraft_subsystems)
     - [PVCells.cpp](spacecraft_subsystems/PVCells.cpp)
     - [PVCells.hpp](spacecraft_subsystems/PVCells.hpp)
@@ -30,3 +30,6 @@
     - [SnFNetDevice.cpp](stop-and_forward/SnFNetDevice.cpp)
     - [SnFNetDevice.hpp](stop-and_forward/SnFNetDevice.hpp)
 ### Changed
+- [propagation_models](propagation_models)
+    - [CloudsPropagationLossModel.cpp](propagation_models/CloudsPropagationLossModel.cpp)
+    - [CloudsPropagationLossModel.hpp](propagation_models/CloudsPropagationLossModel.hpp)

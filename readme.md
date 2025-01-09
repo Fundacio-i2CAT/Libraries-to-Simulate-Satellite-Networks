@@ -7,19 +7,19 @@
 
 # Libraries to Simulate Satellite Networks
 This repository contains libraries that simulate satellite networks. Such libraries are compatible with the Distributed Satellite System Simulator (DSS-SIM). The description of the DSS-SIM can be found in the following paper: [Towards an Integral Model-Based Simulator for Autonomous Earth Observation Satellite Networks](https://ieeexplore.ieee.org/abstract/document/8517811). The current version of this repository allows to simulate the following aspects of the satellite networks:
+* **PCAP Helper**: Helper to trace packets on the simulator.
 * **Propagation Models**: Allows the simulation of attenuation in RF communications due to the clouds.
 * **Medium Access Protocols**: Allows the simulation of the CSMA-CA including the and adapted NetDevice Module.
 * **Spacecraft Subsystems**: Addition of a Solar cells model.
 * **Orbit Propagation**: Implements the SGP4 orbit propagation model.
-* **PCAP Helper**: Helper to trace packets on the simulator.
+* **Simulations**: Simulations on Hardware-in-the-Loop and the Stop and Forward.
 * **Stop & Forward NetDevice**: Net Device to simulate Stop & Forward and a simulation file.
-* ****:
 
 # Pre-Requisites
 The prerequisites to use this repository are:
 * Distributed Satellite System Simulator (Contact i2CAT [here](https://i2cat.net/contact/))
 * Vallado's C++ library for SGP4 (Available online [here](https://github.com/Spacecraft-Code/Vallado/tree/master/cpp/SGP4/SGP4))
-* Network Simulator 3 (v3.35) (Available online [here](https://www.nsnam.org/releases/ns-3-35/))
+* Network Simulator 3 (v3.41) (Available online [here](https://www.nsnam.org/releases/ns-3-41/))
 
 # How to build it
 This repository can not be directly build. To do so, files shall be added into its correspondent module of the DSS-SIM. After that the whole project must be build. Notice that the DSS_SIM is needed to be able to use these libraries.
@@ -29,12 +29,16 @@ In order to use these libraries the previous installation of the DSS-SIM is requ
 
 |Developed module          |DSS-SIM Module            |
 |--------------------------|--------------------------|
-|Propagation Models        |Networking/Channels       |
-|Medium Access Protocols   |Networking/Net_Device     |
-|Spacecraft Subsystems     |Physical/Modules          |
-|Orbit Propagation         |Physical/Orbit_Trajectory |
+|Helpers                   |networking/helpers        |
+|Medium Access Protocols   |networking/net_devices    |
+|Orbit Propagation         |physical/orbit_trajectory |
+|Propagation Models        |networking/channels       |
+|Simulations               |apps/                     |
+|Spacecraft Subsystems     |physical/modules          |
+|Stop and Forward          |networking/net_devices    |
 
-All these modules had been tested by using GTest and making unit tests for each of them before allowing them to be published. In order to use them, when preparing a simulation on the DSS-SIM, it is only needed to call functions such as: *sgp4Init* to propagate the SGP4 orbit, *getOutputPower* to obtain the output power obtained by the solar cells, *CsmaCaMacNetDevice* to create a Net Device that uses CSMA/CA, or *setCloudsPropagation* in the communications channel to retrieve the attenuation due to the clouds by means of *getAtt*. Notice that the communications channel is not provided in this repository as far as it is a part of the Distributed Satelllite System Simulator.
+
+All these modules had been tested by using GTest and making unit tests for each of them before allowing them to be published.
 
 Finally, it is important to mention that the code in these files can be extracted to adapt it to other simulation tools if it is not desired to use DSS-SIM.
 
