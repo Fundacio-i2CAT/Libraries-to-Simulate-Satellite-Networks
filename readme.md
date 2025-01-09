@@ -8,9 +8,12 @@
 # Libraries to Simulate Satellite Networks
 This repository contains libraries that simulate satellite networks. Such libraries are compatible with the Distributed Satellite System Simulator (DSS-SIM). The description of the DSS-SIM can be found in the following paper: [Towards an Integral Model-Based Simulator for Autonomous Earth Observation Satellite Networks](https://ieeexplore.ieee.org/abstract/document/8517811). The current version of this repository allows to simulate the following aspects of the satellite networks:
 * **Propagation Models**: Allows the simulation of attenuation in RF communications due to the clouds.
-* **Medium Access Protocols**: Allows the simulation of the CSMA-CA including the and adapted Net Device Module.
+* **Medium Access Protocols**: Allows the simulation of the CSMA-CA including the and adapted NetDevice Module.
 * **Spacecraft Subsystems**: Addition of a Solar cells model.
 * **Orbit Propagation**: Implements the SGP4 orbit propagation model.
+* **PCAP Helper**: Helper to trace packets on the simulator.
+* **Stop & Forward NetDevice**: Net Device to simulate Stop & Forward and a simulation file.
+* ****:
 
 # Pre-Requisites
 The prerequisites to use this repository are:
