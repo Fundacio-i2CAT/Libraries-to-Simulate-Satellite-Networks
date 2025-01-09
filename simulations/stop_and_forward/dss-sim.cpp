@@ -223,7 +223,7 @@ int main(int argc, char** argv)
     /* Applications part--------------------------------------------------------------------------*/
     // UDP server at GS (NTN Gateway)
     UdpServerHelper udpHelper(5555);
-    udpHelper.SetAttribute("StopTime", TimeValue(Globals::user.simulation_duration));
+    udpHelper.SetAttribute("storeTime", TimeValue(Globals::user.simulation_duration));
     Ptr<UdpServer> udpServer = DynamicCast<UdpServer>(udpHelper.Install(node3).Get(0));
     
     // UDP Client at UE
@@ -231,7 +231,7 @@ int main(int argc, char** argv)
     udpClientHelper.SetAttribute("Interval", ns3::TimeValue(Seconds(100.0)));
     udpClientHelper.SetAttribute("PacketSize", ns3::UintegerValue(1024));
     udpClientHelper.SetAttribute("MaxPackets", ns3::UintegerValue(1000000));
-    udpClientHelper.SetAttribute("StopTime", TimeValue(Globals::user.simulation_duration));
+    udpClientHelper.SetAttribute("storeTime", TimeValue(Globals::user.simulation_duration));
     Ptr<UdpClient> udpClient = DynamicCast<UdpClient>(udpClientHelper.Install(node1).Get(0));
 
     /* Routing part-------------------------------------------------------------------------------*/
@@ -392,7 +392,7 @@ int main(int argc, char** argv)
     }
 
     /* Launch framework: ------------------------------------------------------------------------ */
-    ns3::Simulator::Stop(Globals::user.simulation_duration);
+    ns3::Simulator::store(Globals::user.simulation_duration);
     ns3::Simulator::Run();
 
     double pkts_sent = udpClient->GetTotalTx() / 1024;

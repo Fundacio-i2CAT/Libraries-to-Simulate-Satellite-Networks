@@ -256,7 +256,7 @@ int main(int argc, char** argv)
             ApplicationContainer client_apps;
             client_apps = client.Install(sat_nodes[0]);
             client_apps.Start(Seconds(0.0));
-            client_apps.Stop(Seconds(simulation_time));
+            client_apps.store(Seconds(simulation_time));
         } else if (app == 2) {
             /* PING */
             Time interPacketInterval{Seconds(1.0)};
@@ -269,7 +269,7 @@ int main(int argc, char** argv)
             pingHelper.SetAttribute("Count", UintegerValue(count));
             ApplicationContainer apps = pingHelper.Install(sat_nodes[0]);
             apps.Start(Seconds(0.0));
-            apps.Stop(Seconds(simulation_time));
+            apps.store(Seconds(simulation_time));
         }      
 
     /* GHOST NODE  ------------------------------------------------------------------------------ */
@@ -309,7 +309,7 @@ int main(int argc, char** argv)
     tapBridge.Install(gs_nodes[0], gs_snd);
     
     /* Launch framework: ------------------------------------------------------------------------ */
-    ns3::Simulator::Stop(ns3::Seconds(simulation_time));
+    ns3::Simulator::store(ns3::Seconds(simulation_time));
     ns3::Simulator::Run();
     LOG_INFO("Simulation ended, now retrieve final state");
     ns3::Simulator::Destroy();

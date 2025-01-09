@@ -12,8 +12,8 @@ This repository contains libraries that simulate satellite networks. Such librar
 * **Medium Access Protocols**: Allows the simulation of the CSMA-CA including the and adapted NetDevice Module.
 * **Spacecraft Subsystems**: Addition of a Solar cells model.
 * **Orbit Propagation**: Implements the SGP4 orbit propagation model.
-* **Simulations**: Simulations on Hardware-in-the-Loop and the Stop and Forward.
-* **Stop & Forward NetDevice**: Net Device to simulate Stop & Forward and a simulation file.
+* **Simulations**: Simulations on Hardware-in-the-Loop and the store and Forward.
+* **store & Forward NetDevice**: Net Device to simulate store & Forward and a simulation file.
 
 # Pre-Requisites
 The prerequisites to use this repository are:
@@ -35,7 +35,7 @@ In order to use these libraries the previous installation of the DSS-SIM is requ
 |Propagation Models        |networking/channels       |
 |Simulations               |apps/                     |
 |Spacecraft Subsystems     |physical/modules          |
-|Stop and Forward          |networking/net_devices    |
+|store and Forward          |networking/net_devices    |
 
 
 All these modules had been tested by using GTest and making unit tests for each of them before allowing them to be published.
