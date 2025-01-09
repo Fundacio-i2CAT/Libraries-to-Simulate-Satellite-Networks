@@ -2,7 +2,7 @@
 
 [![Maintenance](https://img.shields.io/badge/Status-Maintained-green.svg)]()
 [![made-with-cpp](https://img.shields.io/badge/Made%20with-C%2B%2B-blue)](https://isocpp.org/)
-[![GPLv2 license](https://img.shields.io/badge/License-GPLv2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
+[![AGPLv3](https://img.shields.io/badge/License-AGPLv3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0.en.html)
 
 
 # Libraries to Simulate Satellite Networks
