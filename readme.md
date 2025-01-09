@@ -13,7 +13,7 @@ This repository contains libraries that simulate satellite networks. Such librar
 * **Spacecraft Subsystems**: Addition of a Solar cells model.
 * **Orbit Propagation**: Implements the SGP4 orbit propagation model.
 * **Simulations**: Simulations on Hardware-in-the-Loop and the store and Forward.
-* **store & Forward NetDevice**: Net Device to simulate store & Forward and a simulation file.
+* **Store & Forward NetDevice**: Net Device to simulate store & Forward and a simulation file.
 
 # Pre-Requisites
 The prerequisites to use this repository are:
